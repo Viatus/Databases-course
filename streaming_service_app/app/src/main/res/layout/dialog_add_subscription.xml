@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/durationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Choose subscription duration" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3"
+        android:id="@+id/durationNumber"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/durationSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="24"
+        android:progress="3"/>
+
+</LinearLayout>

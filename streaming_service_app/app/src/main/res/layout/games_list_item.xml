@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:background ="@drawable/game_item_background"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/gameAvatar"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="gameAvatar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/gameAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gamePrice"/>
+
+    <TextView
+        android:id="@+id/gamePrice"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/isBoughtImage"
+        app:layout_constraintStart_toEndOf="@id/priceTag"
+        app:layout_constraintTop_toBottomOf="@id/gameTitle"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/priceTag"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:text="Price"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/gameTitle"
+        app:layout_constraintStart_toEndOf="@id/gameAvatar"
+        app:layout_constraintEnd_toStartOf="@id/gamePrice"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/isBoughtImage"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/gamePrice"
+        app:layout_constraintTop_toBottomOf="@id/gameTitle"
+        android:contentDescription="isBoughtImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

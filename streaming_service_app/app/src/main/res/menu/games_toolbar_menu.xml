@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ManageActivity">
+
+    <item
+        android:id="@+id/playBuy"
+        android:icon="@drawable/play_arrow_circle"
+        android:orderInCategory="1"
+        android:title="playBuy"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/sort_black"
+        android:orderInCategory="2"
+        android:title="sort"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh_black"
+        android:orderInCategory="3"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+
+</menu>
